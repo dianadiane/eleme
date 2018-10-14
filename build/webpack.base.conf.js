@@ -7,9 +7,6 @@ const vueLoaderConfig = require('./vue-loader.conf')
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
-
-
-
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
@@ -31,6 +28,18 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test:/\.css$/,
+        loader:'style-loader!css-loader'
+      },
+      {
+        test: /\.styl$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'stylus-loader',
+        ]
+      },
       {
         test: /\.vue$/,
         loader: 'vue-loader',
@@ -64,7 +73,9 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
-      }
+      },
+
+
     ]
   },
   node: {

@@ -1,4 +1,4 @@
-<template>
+<!--<template>
     <div>
       {{this.msg}}
     </div>
@@ -19,4 +19,4 @@
 
 <style>
 
-</style>
+</style>-->

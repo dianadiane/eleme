@@ -1,3 +1,4 @@
+<!--
 <template>
     <div>
         <div>{{msg}}</div>
@@ -17,3 +18,4 @@ import axios from 'axios'
 <style>
 
 </style>
+-->

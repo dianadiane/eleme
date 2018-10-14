@@ -1,4 +1,4 @@
-<template>
+<!--<template>
   <div class="hello">
     <h1>{{ msg }}</h1>
   </div>
@@ -15,10 +15,10 @@
   }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+&lt;!&ndash; Add "scoped" attribute to limit CSS to this component only &ndash;&gt;
 <style scoped>
   h1, h2 {
     font-weight: normal;
   }
 
-</style>
+</style>-->

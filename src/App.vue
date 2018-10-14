@@ -1,6 +1,6 @@
-<template>
+<!--<template>
   <div id="app">
-      <Header :seller="seller"></Header>
+      &lt;!&ndash;<Header :seller="seller" v-if="flag"></Header>&ndash;&gt;
     <div class="tab border-1px">
       <div class="tab-item">
         <router-link to="/goods">商品</router-link>
@@ -17,27 +17,31 @@
       content
     </div>
   </div>
-</template>
+</template>-->
 
 <script>
-
+/*
   import Vue from 'vue'
   import Header from './components/Header/Header.vue'
   import axios from 'axios'
-  Vue.prototype.$http = axios;
+  Vue.prototype.$http = axios;*/
 
   const ERR_OK = 0;
 
   export default {
-    name: 'App',
+   /* name: 'App',
     data(){
       return {
-        seller: {}
+          flag:false,
+        seller: {
+
+        }
       }
     },
-    created(){
+    mounted(){
       this.$http.get('/static/data.json').then(response => {
         this.seller = response.data;
+        this.flag = true;
         console.log(this.seller);
       },erro => {
         // error callback
@@ -45,19 +49,16 @@
     },
     components: {
       Header
-    },
+    },*/
   }
 
 </script>
 
+<!--
 <style>
-  #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /*#app {
     color: #2c3e50;
   }
-
   .tab {
     display: flex;
     width: 100%;
@@ -72,9 +73,9 @@
     bottom:0;
     width:100%;
     border-top:1px solid rgba(7,17,27,.1);
-    -webkit-transform: scaleY(0.5);
+     -webkit-transform: scaleY(0.5);
     transform: scaleY(0.5);
-    -webkit-transform-origin: 0 0;
+     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
   }
 
@@ -92,5 +93,6 @@
   a.active{
     color: rgb(240,20,20);
   }
-
+*/
 </style>
+-->
